@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="My Interactive Personal Profile Page">
+<meta name="keywords" content="HTML, CSS, JavaScript, Profile">
+<meta name="author" content="KWILBI">
+<title>Kwilbi's Blog</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', Arial, sans-serif;
+        background: url('backgroundimage.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: #333;
+    }
+
+    header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    h2 {
+        color: #000;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .left, .right {
+        width: 48%;
+    }
+
+    section {
+         background: rgba(255, 255, 255, 0.9); /* 90% white, 10% transparent */
+    padding: 20px;
+    margin: 0 auto 20px auto; /* Short-hand para sa margin: auto at margin-bottom */
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Dagdag shadow para "lutang" ang box */
+    
+    }
+
+    img {
+        display: block;
+        margin: 10px auto;
+        border-radius: 50%;
+    }
+
+    button {
+        display: block;
+        margin: 15px auto;
+        padding: 10px 20px;
+        background: #000;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #45a049;
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+
+    footer {
+        text-align: center;
+        background: #222;
+        color: white;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    /* 📱 Responsive */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .left, .right {
+            width: 100%;
+        }
+    }
+	
+	#profile-pic {
+    /* Ito ang sikreto para maging responsive */
+    width: 100%;             /* Susunod siya sa lapad ng section */
+    max-width: 150px;        /* Pero hindi siya lalampas sa 150px para hindi lumabo */
+    height: auto;            /* Maintain ang proportion para hindi maging bansot o payat */
+    
+    /* Iba pang styles mo */
+    border: 3px solid #4CAF50;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;       /* Para laging nasa gitna */
+}
+
+	.profile-img {
+    width: 150px;          /* Tamang laki para sa profile section */
+    height: 150px;         /* Pantay dapat sa width */
+    border-radius: 15px;    /* Perfect circle */
+    object-fit: cover;     /* Hindi madi-distort ang picture */
+    border: 3px solid #ddd; /* Optional: para may outline */
+    display: block;        /* Para ma-center kung gusto mo */
+    margin: 10px auto;     /* Igitna ang image */
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Kwilbi's Blog</h1>
+    <p style="color:white;">Hi, I’m <strong>KWILBI</strong> 👋</p>
+	
+	<div class="HOME">
+    <a href="update.html" class="update-link">LIFE UPDATE</a>
+	 <a href="uploads.html" class="update-link">UPLOADS</a>
+</div>
+
+<style>
+    .update-link {
+        display: inline-block;
+        text-decoration: none;     /* Alisin ang underline */
+        background-color: black;   /* Background color */
+        color: white;              /* Text color */
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: background 0.3s;
+    }
+
+    .update-link:hover {
+        background-color: #555;    /* Dark gray pag naka-hover */
+    }
+</style>
+		
+
+</header>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+        <section>
+            <h2>About Me</h2>
+            <p>I’m passionate about creativity and self-expression. I enjoy song writing and playing the acoustic guitar.</p>
+        </section>
+
+        <section>
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Song Writing</li>
+            </ul>
+        </section>
+		
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+        <section>
+            <h2>My Website</h2>
+            <p>
+                Visit my site:
+                <a href="https://www.youtube.com/channel/UCCKw9ssP3EsKyIc-xhMNo4g" target="_blank">
+                    YouTube Channel
+                </a>
+            </p>
+        </section>
+
+	   
+			<section>
+    <h2>My Profile</h2>
+    <div class="content portfolio-post">
+        <img src="images/my profile.jpg" alt="Portfolio Work" class="profile-img">
+		<p> Username: Kwilbi </p>
+    </div>
+</section>
+   </div>
+
+</div>
+
+	<section>
+    <h2> Highlights </h2>
+	
+	</section>
+<footer>
+    <p>&copy; 2026 My BLOG | KWILBI</p>
+</footer>
+
+
+
+
+</body>
+</html>
